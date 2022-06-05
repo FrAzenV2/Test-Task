@@ -1,11 +1,10 @@
 ﻿using Configs;
 using Interfaces.ComponentInterfaces;
-using Interfaces.ConfigInterfaces;
 using UnityEngine;
 
 namespace Entities
 {
-    public class Сockroach : MonoBehaviour
+    public class Cockroach : MonoBehaviour
     {
         private IMovable movementComponent;
         private IScarable scareComponent;
