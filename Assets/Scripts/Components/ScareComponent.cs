@@ -10,6 +10,8 @@ namespace Components
     public class ScareComponent : MonoBehaviour
     {
         [SerializeField] private float range = 2f;
+        [SerializeField] private SpriteRenderer dangerZone;
+        [SerializeField] private SpriteRenderer extremeZone;
         
         [Tooltip("Lower value = less radius")]
         [SerializeField, Range(0, 1)] private float maxScareRange = 0.1f;
@@ -69,6 +71,10 @@ namespace Components
                 collider = GetComponent<CircleCollider2D>();
 
             collider.radius = range;
+            
+            //Multiplying by 2 is quick fix because circle sprite has radius of 0.5;
+            dangerZone.transform.localScale = Vector3.one * range * 2;
+            extremeZone.transform.localScale = Vector3.one * (range * maxScareRange) * 2;
         }
 
         private void OnDrawGizmosSelected()
