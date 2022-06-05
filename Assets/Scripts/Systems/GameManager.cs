@@ -20,6 +20,7 @@ namespace Systems
         [SerializeField] private int cockroachesAmount = 1;
         [SerializeField] private FinishComponent finishComponent;
 
+        [SerializeField] private StartScreen startScreen;
         [SerializeField] private ScoreSystem scoreSystem;
         [SerializeField] private FinalScreen finalScreen;
         public static GameManager Instance { get; private set; }
@@ -84,6 +85,7 @@ namespace Systems
         private void Start()
         {
             PlayerData = SaveLoadSystem.LoadPlayerData();
+            startScreen.ShowCurrentBest(PlayerData.HighScore);
         }
     }
 }
