@@ -1459,7 +1459,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &762576020
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1788,6 +1788,7 @@ MonoBehaviour:
   cockroachPrefab: {fileID: 5867477751298538313, guid: cd6e20798897ea342b514553a78c5413, type: 3}
   spawnPosition: {fileID: 1038431883}
   cockroachesParent: {fileID: 1212771582}
+  randomSpawnRadius: 2
 --- !u!4 &829740616
 Transform:
   m_ObjectHideFlags: 0
@@ -2326,7 +2327,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1186850204
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2576,7 +2577,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -318}
-  m_SizeDelta: {x: 600, y: 150}
+  m_SizeDelta: {x: 450, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1352791710
 MonoBehaviour:
@@ -2878,7 +2879,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1462228364
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2913,9 +2914,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highScoreText: {fileID: 1471377616}
-  highScorePrefix: Highscore:\n
+  highScorePrefix: 'Highscore: '
   currentScoreText: {fileID: 1352791710}
-  currentScorePrefix: Current Score:\n
+  currentScorePrefix: 'Current Score: '
   newHighScoreLabel: {fileID: 378675867}
 --- !u!1 &1471377614
 GameObject:
@@ -2953,7 +2954,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -139.5}
-  m_SizeDelta: {x: 600, y: 150}
+  m_SizeDelta: {x: 450, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1471377616
 MonoBehaviour:
@@ -2975,7 +2976,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: HIGHSCORE:\n 999999
+  m_text: 'HIGHSCORE: 999999'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
