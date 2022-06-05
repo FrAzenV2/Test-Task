@@ -9,13 +9,13 @@ namespace UI
         [SerializeField] private string highScorePrefix = "Highscore: ";
         [SerializeField] private TMP_Text currentScoreText;
         [SerializeField] private string currentScorePrefix = "Current Score: ";
-        [SerializeField] private TMP_Text newHighScoreText;
+        [SerializeField] private GameObject newHighScoreLabel;
 
         public void Open(int highScore, int currentScore, bool isNewHighScore)
         {
             highScoreText.text = highScorePrefix + highScore;
             currentScoreText.text = currentScorePrefix + currentScore;
-            if (isNewHighScore) newHighScoreText.gameObject.SetActive(true);
+            if (isNewHighScore) newHighScoreLabel.SetActive(true);
         }
     }
 }
