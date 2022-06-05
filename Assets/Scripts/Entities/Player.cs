@@ -18,7 +18,7 @@ namespace Entities
         
         private void Update()
         {
-            movementComponent.MoveTowards(targetableComponent.DirectionToTargetPos, Time.deltaTime);
+            movementComponent.MoveTowards(targetableComponent.CurrentTargetTransform.position, Time.deltaTime);
         }
 
         private void Awake()

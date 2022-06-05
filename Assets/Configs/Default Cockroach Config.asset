@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Default Cockroach Config
   m_EditorClassIdentifier: 
   <Speed>k__BackingField: 3
-  <RotationSpeed>k__BackingField: 270
-  <NewDirectionAffect>k__BackingField: 0.8
+  <RotationSpeed>k__BackingField: 720
+  <NewDirectionAffect>k__BackingField: 1

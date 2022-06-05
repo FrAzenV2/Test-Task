@@ -50,6 +50,12 @@ namespace Systems
             SaveLoadSystem.SavePlayerData();
             Reload();
         }
+
+        public void CloseGame()
+        {
+            SaveLoadSystem.SavePlayerData();
+            Application.Quit();
+        }
     
         private void Reload()
         {

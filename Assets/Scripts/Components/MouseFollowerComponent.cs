@@ -27,6 +27,7 @@ namespace Components
         private void CalculateCurrentPosition()
         {
             currentPos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+            currentPos.z = 0;
         }
 
         public Transform Transform => transform;
