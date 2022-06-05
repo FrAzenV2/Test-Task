@@ -304,7 +304,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &203305289
 Transform:
   m_ObjectHideFlags: 0
@@ -361,7 +361,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 1
 --- !u!114 &203305294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -374,10 +374,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc41b51184754333a12b1885db122a02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 0.5
-  dangerZone: {fileID: 0}
-  extremeZone: {fileID: 0}
-  maxScareRange: 0.3
+  range: 1
+  dangerZone: {fileID: 1138989692}
+  extremeZone: {fileID: 440769192}
+  maxScareRange: 0.482
   collider: {fileID: 203305293}
 --- !u!114 &203305295
 MonoBehaviour:
@@ -796,7 +796,7 @@ Transform:
   m_GameObject: {fileID: 440769190}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.964, y: 0.964, z: 0.964}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 203305289}
@@ -848,7 +848,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.08475, y: 0.08475}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1989,7 +1989,7 @@ Transform:
   m_GameObject: {fileID: 1138989690}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 203305289}
@@ -2041,7 +2041,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.25, y: 0.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
