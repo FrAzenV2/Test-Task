@@ -4,9 +4,9 @@ namespace Interfaces.ComponentInterfaces
 {
     public interface ITargetable
     {
-        void SetTargetPosition(Vector3 pos);
+        void SetTarget(ITarget target);
         
-        Vector3 CurrentTargetPos { get; }
+        Transform CurrentTargetTransform { get; }
         Vector3 DirectionToTargetPos { get; }
     }
 }
