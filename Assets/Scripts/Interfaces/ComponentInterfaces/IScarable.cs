@@ -6,6 +6,7 @@ namespace Interfaces.ComponentInterfaces
     {
         Transform Transform { get; }
         Vector3 LastScareEpicenter { get; set; }
+        
         //ScareAmount = 1 - highest supposed
         float ScareAmount { get; set; }
     }

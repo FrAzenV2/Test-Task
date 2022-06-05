@@ -10,6 +10,7 @@ namespace Components
     public class ScareComponent : MonoBehaviour
     {
         [SerializeField] private float range = 2f;
+        
         [Tooltip("Lower value = less radius")]
         [SerializeField, Range(0, 1)] private float maxScareRange = 0.1f;
 
@@ -46,8 +47,7 @@ namespace Components
             distanceToScarable -= range * maxScareRange;
             return Mathf.InverseLerp(range - range * maxScareRange, 0, distanceToScarable);
         }
-
-
+        
         private void OnTriggerEnter2D(Collider2D other)
         {
             if(!other.TryGetComponent(out IScarable scarable)) return;
@@ -60,6 +60,7 @@ namespace Components
             if(!other.TryGetComponent(out IScarable scarable)) return;
             
             scarableComponentsInZone.Remove(scarable);
+            scarable.ScareAmount = 0;
         }
         
         private void OnValidate()
