@@ -69,11 +69,14 @@ namespace Components
                 collider = GetComponent<CircleCollider2D>();
 
             collider.radius = range;
-            
-            Gizmos.color = Color.yellow;
-            Gizmos.DrawWireSphere(transform.position, range);
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(transform.position, range * maxScareRange);
+        }
+
+        private void OnDrawGizmosSelected()
+        {
+            Gizmos.color = new Color(1,0.92f,0.016f, 0.4f);
+            Gizmos.DrawSphere(transform.position, range);
+            Gizmos.color = new Color(1,0,0, 0.7f);
+            Gizmos.DrawSphere(transform.position, range * maxScareRange);
         }
 
     }

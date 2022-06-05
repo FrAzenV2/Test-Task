@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Configs
 {
-    [CreateAssetMenu(fileName = "Default Cockroach Config", menuName = "Configs/Entity Config", order = 0)]
+    [CreateAssetMenu(fileName = "Default Cockroach Config", menuName = "Configs/Cockroach Config", order = 0)]
     public class CockroachConfig : ScriptableObject, IMovementConfig
     {
         [field: SerializeField] public float Speed { get; private set; } = 3;
