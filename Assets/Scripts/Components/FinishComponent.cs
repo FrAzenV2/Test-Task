@@ -12,8 +12,8 @@ namespace Components
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if(!other.TryGetComponent(out Cockroach cockroach)) return;
-            
+            if (!other.TryGetComponent(out Cockroach cockroach)) return;
+
             GameManager.Instance.EndGame();
         }
     }

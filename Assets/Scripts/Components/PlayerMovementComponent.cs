@@ -12,11 +12,11 @@ namespace Components
         }
         public void MoveTowards(Vector3 point, float deltaTime)
         {
-            transform.position = Vector3.MoveTowards(transform.position,point,currentMovementConfig.Speed * deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, point, currentMovementConfig.Speed * deltaTime);
         }
         public void RotateTowards(Vector3 direction, float deltaTime)
         {
-            
+
         }
     }
 }

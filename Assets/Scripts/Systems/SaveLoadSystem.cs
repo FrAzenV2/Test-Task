@@ -8,7 +8,7 @@ namespace Systems
         private const string SaveKey = "SaveData";
 
         private static PlayerData data;
-        
+
         public static PlayerData LoadPlayerData()
         {
             if (!PlayerPrefs.HasKey(SaveKey))
@@ -22,11 +22,11 @@ namespace Systems
             return data;
         }
 
-        public static  void SavePlayerData()
+        public static void SavePlayerData()
         {
             PlayerPrefs.SetString(SaveKey, JsonUtility.ToJson(data));
             PlayerPrefs.Save();
         }
-        
+
     }
 }

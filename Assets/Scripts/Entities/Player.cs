@@ -10,12 +10,12 @@ namespace Entities
         private IMovable movementComponent;
         private ITargetable targetableComponent;
 
-        public void Init(IMovementConfig movementConfig,ITarget target)
+        public void Init(IMovementConfig movementConfig, ITarget target)
         {
             movementComponent.Init(movementConfig);
             targetableComponent.SetTarget(target);
         }
-        
+
         private void Update()
         {
             movementComponent.MoveTowards(targetableComponent.CurrentTargetTransform.position, Time.deltaTime);

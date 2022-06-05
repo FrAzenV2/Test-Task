@@ -6,10 +6,10 @@ namespace UI
     public class ScoreScreen : MonoBehaviour
     {
         [SerializeField] private TMP_Text scoreText;
-        
+        [SerializeField] private string scorePrefix = "SCORE: ";
         public void UpdateScore(float currentScore)
         {
-            scoreText.text = ((int)currentScore).ToString();
+            scoreText.text = scorePrefix + (int)currentScore;
         }
     }
 }

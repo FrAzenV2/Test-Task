@@ -3,7 +3,7 @@
     public interface IMovementConfig
     {
         float Speed { get; }
-        
+
         float RotationSpeed { get; }
     }
 }

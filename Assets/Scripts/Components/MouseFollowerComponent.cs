@@ -7,7 +7,7 @@ namespace Components
     {
         private Camera mainCamera;
         private Vector3 currentPos;
-        
+
         private void Awake()
         {
             mainCamera = Camera.main;
@@ -18,12 +18,12 @@ namespace Components
             CalculateCurrentPosition();
             MoveToCurrentPos();
         }
-        
+
         private void MoveToCurrentPos()
         {
             transform.position = currentPos;
         }
-        
+
         private void CalculateCurrentPosition()
         {
             currentPos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
